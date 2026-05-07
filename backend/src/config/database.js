@@ -14,7 +14,7 @@ if (process.env.DATABASE_URL) {
   });
 } else {
   // Desenvolvimento sem PostgreSQL: usa H2-style in-memory via Sequelize
-  sequelize = new Sequelize('salao_db', 'user', 'pass', {
+  sequelize = new Sequelize('ai_salon_chatbot', 'postgres', 'postgres', {
     host: 'localhost',
     dialect: 'postgres',
     logging: false,
